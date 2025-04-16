@@ -1,0 +1,24 @@
+{
+  "name": "blog-url-extractor",
+  "version": "1.0.0",
+  "description": "Extract blog post URLs from web scraping results",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "dev": "node app.js"
+  },
+  "keywords": [
+    "url",
+    "extractor",
+    "blog",
+    "scraping",
+    "n8n"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.20.2",
+    "cors": "^2.8.5",
+    "express": "^4.18.2"
+  }
+}
