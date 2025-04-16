@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog URL Extractor</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Blog URL Extractor</h1>
+    <p>Extract blog post URLs from web scraping results</p>
+  </header>
+
+  <main>
+    <div class="container">
+      <div class="input-section">
+        <h2>Input</h2>
+        <div class="input-controls">
+          <button id="clear-btn">Clear</button>
+          <button id="sample-btn">Load Sample Data</button>
+          <button id="extract-btn">Extract URLs</button>
+        </div>
+        <textarea id="input-data" placeholder="Paste your scraping results JSON here..."></textarea>
+      </div>
+      
+      <div class="results-section">
+        <h2>Results</h2>
+        <div class="results-stats">
+          <div class="stat-box">
+            <h3>Total URLs</h3>
+            <p id="total-urls">0</p>
+          </div>
+          <div class="stat-box">
+            <h3>Domains</h3>
+            <p id="total-domains">0</p>
+          </div>
+        </div>
+        
+        <div class="domain-breakdown">
+          <h3>URLs by Domain</h3>
+          <div id="domain-stats"></div>
+        </div>
+        
+        <div class="url-list-section">
+          <h3>Extracted URLs</h3>
+          <div class="url-controls">
+            <button id="copy-urls">Copy All URLs</button>
+            <input type="text" id="filter-urls" placeholder="Filter URLs...">
+          </div>
+          <ul id="url-list"></ul>
+        </div>
+      </div>
+    </div>
+  </main>
+  
+  <footer>
+    <p>Blog URL Extractor | Connect to n8n via API endpoint: <code>/api/extract</code></p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
